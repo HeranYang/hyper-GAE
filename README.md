@@ -8,7 +8,7 @@
 
 
 ## Requirements
-All experiments utilize the TensorFlow library. We recommend the following package versions:<br>
+All experiments utilize the TensorFlow library. We recommend the following package versions:
 * python == 3.6
 * tensorflow-gpu == 1.10.0
 * numpy == 1.19.2
@@ -17,6 +17,9 @@ All experiments utilize the TensorFlow library. We recommend the following packa
 
 
 ## Dataset
+We use the MICCAI 2019 Multimodal Brain Tumor Segmentation (BraTS 2019) and MICCAI 2018 Multimodal Brain Tumor Segmentation (BraTS 2018) datasets in our experiments. The homepages of these two datasets are:<br>
+* [BraTS 2019 dataset](https://www.med.upenn.edu/cbica/brats-2019/)
+* [BraTS 2018 dataset](https://www.med.upenn.edu/sbia/brats2018.html)
 
 
 ## Data Preprocessing
