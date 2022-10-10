@@ -22,13 +22,16 @@ We use the MICCAI 2019 Multimodal Brain Tumor Segmentation (BraTS 2019) and MICC
 * [BraTS 2018 dataset](https://www.med.upenn.edu/sbia/brats2018.html): This dataset contains 285 training subjects with ground-truth labels, which are split into 199, 29 and 57 subjects for training, validation and test using the same split list as in [1].
 
 
-## Data Preprocessing
+### Data Preprocessing
 The data has been pre-processed by organizers, i.e., co-registered to the same anatomical template, interpolated to the same resolution and skull-stripped.
 Additionally, we conduct several extra pre-processing steps:
 * N4 correction
 * White matter peak normalization of each modality to 1000
 * Cutting out the black background area outside the brain
+
 After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalities are 4000, 6000, 10000 and 7000 (arbitrary units) respectively.
+
+### Folder Structure
 
 
 ## Training Phase
@@ -43,7 +46,7 @@ After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalit
 
 ## Citation
 If you use this code for your research, please cite our paper:
-> @inproceedings{yang2022, 
+> @inproceedings{yang2022learning, 
 > <br> title={Learning Unified Hyper-network for Multi-modal MR Image Synthesis and Tumor Segmentation with Missing Modalities}, 
 > <br> author={Yang, Heran and Sun, Jian and Xu, Zongben},
 > <br> booktitle={Submitted to IEEE Transactions on Medical Imaging},
