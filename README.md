@@ -50,7 +50,10 @@ Additionally, we conduct several extra pre-processing steps:
 * Cutting out the black background area outside the brain
 
 After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalities are 4000, 6000, 10000 and 7000 (arbitrary units) respectively.
-To reduce the time of loading data, we save the preprocessed training data in .npy format, and save the validation and test data in .nii.gz format.
+
+To reduce the time of loading data, we save the processed training data in .npy format, and save the processed validation and test data in .nii.gz format.
+
+Segmentation label
 
 ### Data Folder Structure
 The structure of our data folder is:
