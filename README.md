@@ -40,22 +40,22 @@ The structure of our data folder is:
         |-- BraTS-Dataset-pro\      : processed data folder
         |       |-- SliceData\      : processed 3D data in .npy format
         |       |       |-- 3DTrain\       : training data set
-        |       |       |       |-- TrainA\       : T1w   images
-        |       |       |       |-- TrainB\       : T1ce  images
-        |       |       |       |-- TrainC\       : T2w   images
+        |       |       |       |-- TrainA\       : t1w   images
+        |       |       |       |-- TrainB\       : t1ce  images
+        |       |       |       |-- TrainC\       : t2w   images
         |       |       |       |-- TrainD\       : flair images
         |       |       |       |-- TrainL\       : segmentation labels
         |       |-- VolumeData\     : processed 3D data in .nii.gz format
         |       |       |-- Valid\         : validation data set
-        |       |       |       |-- ValidA\       : T1w   images
-        |       |       |       |-- ValidB\       : T1ce  images
-        |       |       |       |-- ValidC\       : T2w   images
+        |       |       |       |-- ValidA\       : t1w   images
+        |       |       |       |-- ValidB\       : t1ce  images
+        |       |       |       |-- ValidC\       : t2w   images
         |       |       |       |-- ValidD\       : flair images
         |       |       |       |-- ValidL\       : segmentation labels
         |       |       |-- Test\          : test data set
-        |       |       |       |-- TestA\        : T1w   images
-        |       |       |       |-- TestB\        : T1ce  images
-        |       |       |       |-- TestC\        : T2w   images
+        |       |       |       |-- TestA\        : t1w   images
+        |       |       |       |-- TestB\        : t1ce  images
+        |       |       |       |-- TestC\        : t2w   images
         |       |       |       |-- TestD\        : flair images
         |       |       |       |-- TestL\        : segmentation labels
 
