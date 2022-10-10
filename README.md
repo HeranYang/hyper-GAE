@@ -3,17 +3,23 @@
 
  Code will be published recently.
 
+
 ## Overview
 
 
 ## Requirements
+All experiments utilize the TensorFlow library. We recommend the following package versions:<br>
+* python == 3.6
+* tensorflow-gpu == 1.10.0
+* numpy == 1.19.2
+* imageio == 2.9.0
+* nibabel == 3.2.1
 
 
 ## Dataset
 
-### Download
 
-### Data Preprocessing
+## Data Preprocessing
 
 
 ## Training Phase
