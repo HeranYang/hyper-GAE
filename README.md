@@ -32,6 +32,29 @@ Additionally, we conduct several extra pre-processing steps:
 After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalities are 4000, 6000, 10000 and 7000 (arbitrary units) respectively.
 
 ### Folder Structure
+The structure of our data folder is:
+data\    : Root data folder 
+    |-- BraTS-Datasset-pro\      : processed data folder
+    |       |-- SliceData\       : processed 3D data in .npy format
+    |       |       |-- 3DTrain\       : training data set
+    |       |       |       |-- TrainA\       : T1w   images
+    |       |       |       |-- TrainB\       : T1ce  images
+    |       |       |       |-- TrainC\       : T2w   images
+    |       |       |       |-- TrainD\       : flair images
+    |       |       |       |-- TrainL\       : segmentation labels
+    |       |-- VolumeData\      : processed 3D data in .nii.gz format
+    |       |       |-- Valid\         : validation data set
+    |       |       |       |-- ValidA\       : T1w   images
+    |       |       |       |-- ValidB\       : T1ce  images
+    |       |       |       |-- ValidC\       : T2w   images
+    |       |       |       |-- ValidD\       : flair images
+    |       |       |       |-- ValidL\       : segmentation labels
+    |       |       |-- Test\          : test data set
+    |       |       |       |-- TestA\        : T1w   images
+    |       |       |       |-- TestB\        : T1ce  images
+    |       |       |       |-- TestC\        : T2w   images
+    |       |       |       |-- TestD\        : flair images
+    |       |       |       |-- TestL\        : segmentation labels
 
 
 ## Training Phase
