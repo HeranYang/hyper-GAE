@@ -84,26 +84,26 @@ The structure of our data folder is:
 ## Task I: Multi-modal MR Image Synthesis
 
 
-### Training Phase
+Training phase
 
 
-### Valid Phase
+Valid phase
 
 
-### Test Phase
+Test phase
 
 
 
 ## Task II: Brain Tumor Segmentation with Missing Modalities
 
 
-### Training Phase
+Training phase
 
 
-### Valid Phase
+Valid phase
 
 
-### Test Phase
+Test phase
 
 
 
