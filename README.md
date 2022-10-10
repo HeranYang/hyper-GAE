@@ -5,14 +5,13 @@ Code will be published recently.
 
 
 The outline of this readme file is:
-
-    Overview
-    Requirements
-    Dataset
-    Task I: Multi-modal MR Image Synthesis
-    Task II: Brain Tumor Segmentation with Missing Modalities
-    Citation
-    Reference
+* Overview
+* Requirements
+* Dataset
+* Task I: Multi-modal MR Image Synthesis
+* Task II: Brain Tumor Segmentation with Missing Modalities
+* Citation
+* Reference
     
 
 
