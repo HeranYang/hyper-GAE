@@ -9,7 +9,6 @@ Code will be published recently.
 
 ## Overview
 
-
 The outline of this readme file is:
 
     Overview
@@ -52,7 +51,7 @@ Additionally, we conduct several extra pre-processing steps:
 
 After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalities are 4000, 6000, 10000 and 7000 (arbitrary units) respectively.
 
-### Folder Structure
+### Data Folder Structure
 The structure of our data folder is:
 
     data\    : root data folder  
@@ -83,12 +82,9 @@ The structure of our data folder is:
 
 ## Task I: Multi-modal MR Image Synthesis
 
-
 Training phase
 
-
 Valid phase
-
 
 Test phase
 
@@ -96,12 +92,9 @@ Test phase
 
 ## Task II: Brain Tumor Segmentation with Missing Modalities
 
-
 Training phase
 
-
 Valid phase
-
 
 Test phase
 
