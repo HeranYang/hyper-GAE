@@ -3,21 +3,29 @@ This repository is the official Tensorflow implementation of the paper "Learning
 
 Code will be published recently.
 
-
-The outline of this readme file is:
-* Overview
-* Requirements
-* Dataset
-* Task I: Multi-modal MR Image Synthesis
-* Task II: Brain Tumor Segmentation with Missing Modalities
-* Citation
-* Reference
     
 
 
 
 ## Overview
 
+
+The outline of this readme file is:
+
+    Overview
+    Requirements
+    Dataset
+    Task I: Multi-modal MR Image Synthesis
+    Task II: Brain Tumor Segmentation with Missing Modalities
+    Citation
+    Reference
+    
+The folder structure of our implementation is:
+
+    synthesis\       : code of Hyper-GAE for multi-modal MR image synthesis
+    segmentation\    : code of Hyper-GAE for tumor segmentation with missing modalities
+    data\            : root data folder (to be downloaded and preprocessed)
+    
 
 
 ## Requirements
@@ -47,7 +55,7 @@ After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalit
 ### Folder Structure
 The structure of our data folder is:
 
-    data\    : Root data folder  
+    data\    : root data folder  
         |-- BraTS-Dataset-pro\      : processed data folder
         |       |-- SliceData\      : processed 3D data in .npy format
         |       |       |-- 3DTrain\       : training data set
