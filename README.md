@@ -61,21 +61,37 @@ The structure of our data folder is:
 
 
 
-## Training Phase
+
+## TASK 1: Multi-modal MR Image Synthesis
+
+
+### Training Phase
+
+
+### Valid Phase
+
+
+### Test Phase
 
 
 
-## Valid Phase
+## TASK 2: Brain Tumor Segmentation with Missing Modalities
 
 
+### Training Phase
 
-## Test Phase
+
+### Valid Phase
+
+
+### Test Phase
+
 
 
 
 ## Citation
 If you use this code for your research, please cite our paper:
-> @inproceedings{yang2022learning, 
+> @article{yang2022learning, 
 > <br> title={Learning Unified Hyper-network for Multi-modal MR Image Synthesis and Tumor Segmentation with Missing Modalities}, 
 > <br> author={Yang, Heran and Sun, Jian and Xu, Zongben},
 > <br> booktitle={Submitted to IEEE Transactions on Medical Imaging},
