@@ -34,7 +34,7 @@ After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalit
 ### Folder Structure
 The structure of our data folder is:<br>
 data\    : Root data folder <br>
-    |-- BraTS-Datasset-pro\      : processed data folder<br>
+|-- BraTS-Datasset-pro\      : processed data folder<br>
     |       |-- SliceData\       : processed 3D data in .npy format<br>
     |       |       |-- 3DTrain\       : training data set<br>
     |       |       |       |-- TrainA\       : T1w   images<br>
