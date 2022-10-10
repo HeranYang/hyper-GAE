@@ -4,7 +4,9 @@
  Code will be published recently.
 
 
+
 ## Overview
+
 
 
 ## Requirements
@@ -16,11 +18,11 @@ All experiments utilize the TensorFlow library. We recommend the following packa
 * nibabel == 3.2.1
 
 
+
 ## Dataset
 We use the MICCAI 2019 Multimodal Brain Tumor Segmentation (BraTS 2019) and MICCAI 2018 Multimodal Brain Tumor Segmentation (BraTS 2018) datasets in our experiments.
 * [BraTS 2019 dataset](https://www.med.upenn.edu/cbica/brats-2019/): This dataset includes 335 training subjects, 125 validation subjects, and 166 test subjects, and the tumor labels of training subjects are provided. Our experiments are performed over 335 training subjects, which are randomly divided into a training set of 218 subjects, a validation set of 6 subjects, and a test set of 111 subjects.
 * [BraTS 2018 dataset](https://www.med.upenn.edu/sbia/brats2018.html): This dataset contains 285 training subjects with ground-truth labels, which are split into 199, 29 and 57 subjects for training, validation and test using the same split list as in [1].
-
 
 ### Data Preprocessing
 The data has been pre-processed by organizers, i.e., co-registered to the same anatomical template, interpolated to the same resolution and skull-stripped.
@@ -35,33 +37,36 @@ After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalit
 The structure of our data folder is:
 
     data\    : Root data folder  
-        |-- BraTS-Datasset-pro\      : processed data folder<br>
-        |       |-- SliceData\       : processed 3D data in .npy format<br>
-    |       |       |-- 3DTrain\       : training data set<br>
-    |       |       |       |-- TrainA\       : T1w   images<br>
-    |       |       |       |-- TrainB\       : T1ce  images<br>
-    |       |       |       |-- TrainC\       : T2w   images<br>
-    |       |       |       |-- TrainD\       : flair images<br>
-    |       |       |       |-- TrainL\       : segmentation labels<br>
-    |       |-- VolumeData\      : processed 3D data in .nii.gz format<br>
-    |       |       |-- Valid\         : validation data set<br>
-    |       |       |       |-- ValidA\       : T1w   images<br>
-    |       |       |       |-- ValidB\       : T1ce  images<br>
-    |       |       |       |-- ValidC\       : T2w   images<br>
-    |       |       |       |-- ValidD\       : flair images<br>
-    |       |       |       |-- ValidL\       : segmentation labels<br>
-    |       |       |-- Test\          : test data set<br>
-    |       |       |       |-- TestA\        : T1w   images<br>
-    |       |       |       |-- TestB\        : T1ce  images<br>
-    |       |       |       |-- TestC\        : T2w   images<br>
-    |       |       |       |-- TestD\        : flair images<br>
-    |       |       |       |-- TestL\        : segmentation labels
+        |-- BraTS-Dataset-pro\      : processed data folder
+        |       |-- SliceData\      : processed 3D data in .npy format
+        |       |       |-- 3DTrain\       : training data set
+        |       |       |       |-- TrainA\       : T1w   images
+        |       |       |       |-- TrainB\       : T1ce  images
+        |       |       |       |-- TrainC\       : T2w   images
+        |       |       |       |-- TrainD\       : flair images
+        |       |       |       |-- TrainL\       : segmentation labels
+        |       |-- VolumeData\     : processed 3D data in .nii.gz format
+        |       |       |-- Valid\         : validation data set
+        |       |       |       |-- ValidA\       : T1w   images
+        |       |       |       |-- ValidB\       : T1ce  images
+        |       |       |       |-- ValidC\       : T2w   images
+        |       |       |       |-- ValidD\       : flair images
+        |       |       |       |-- ValidL\       : segmentation labels
+        |       |       |-- Test\          : test data set
+        |       |       |       |-- TestA\        : T1w   images
+        |       |       |       |-- TestB\        : T1ce  images
+        |       |       |       |-- TestC\        : T2w   images
+        |       |       |       |-- TestD\        : flair images
+        |       |       |       |-- TestL\        : segmentation labels
+
 
 
 ## Training Phase
 
 
+
 ## Valid Phase
+
 
 
 ## Test Phase
