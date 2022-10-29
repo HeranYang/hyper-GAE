@@ -50,14 +50,9 @@ Additionally, we conduct several extra pre-processing steps:
 * Cutting out the black background area outside the brain (for both images and labels)
 
 After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalities are 4000, 6000, 10000 and 7000 (arbitrary units) respectively.
-
-For the training subset: 
-* The image intensities are further linearly scaled to [0, 1], and then the processed 3d training images are saved in .npy format to reduce the time of loading data.
-* The segmentation labels are
-
-For the validation and test subset: 
-* The processed 3d validation and test images are saved in .nii.gz format, and the linear scaling for validation and test subjects is included in our codes within utils.py.
-* The segmentation labels are
+Then, the training and validation/test subjects are respectively processed as follows:
+* For the training subset: The image intensities are further linearly scaled to [0, 1], and then the processed 3d training images are saved in .npy format to reduce the time of loading data. The original segmentation labels are 
+* For the validation/test subset: The processed 3d validation and test images are saved in .nii.gz format, and the linear scaling for validation and test subjects is included in our codes within utils.py. The segmentation labels are
 
 
 ### Data Folder Structure
