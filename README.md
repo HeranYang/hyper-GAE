@@ -41,6 +41,7 @@ We use the MICCAI 2019 Multimodal Brain Tumor Segmentation (BraTS 2019) and MICC
 * [BraTS 2019 dataset](https://www.med.upenn.edu/cbica/brats-2019/): This dataset includes 335 training subjects, 125 validation subjects, and 166 test subjects, and the tumor labels of training subjects are provided. Our experiments are performed over 335 training subjects, which are randomly divided into a training set of 218 subjects, a validation set of 6 subjects, and a test set of 111 subjects.
 * [BraTS 2018 dataset](https://www.med.upenn.edu/sbia/brats2018.html): This dataset contains 285 training subjects with ground-truth labels, which are split into 199, 29 and 57 subjects for training, validation and test using the same split list as in [1].
 
+
 ### Data Preprocessing
 The data has been pre-processed by organizers, i.e., co-registered to the same anatomical template, interpolated to the same resolution and skull-stripped.
 Additionally, we conduct several extra pre-processing steps:
@@ -53,6 +54,7 @@ For the training subset, the intensities are further linearly scaled to [0, 1], 
 The processed validation and test data is saved in .nii.gz format, and the linear scaling for validation and test subjects is included in our codes within utils.py.
 
 Segmentation label
+
 
 ### Data Folder Structure
 The structure of our data folder is:
@@ -82,7 +84,24 @@ The structure of our data folder is:
 
 
 
+
 ## Usage
+
+The structure of our code folder is:
+
+    synthesis\         : code of Hyper-GAE for multi-modal MR image synthesis
+           |-- main.py         : main function
+           |-- model.py        : code of building model, and train/valid/test
+           |-- module.py       : code of defining networks
+           |-- ops.py          : code of defining basic components
+           |-- utils.py        : code of loading train and test data
+    segmentation\      : code of Hyper-GAE for tumor segmentation with missing modalities
+           |-- main.py         : main function
+           |-- model.py        : code of building model, and train/valid/test
+           |-- module.py       : code of defining networks
+           |-- ops.py          : code of defining basic components
+           |-- utils.py        : code of loading train and test data
+
 
 ### Task I: Multi-modal MR Image Synthesis
 
@@ -91,7 +110,6 @@ Training phase
 Valid phase
 
 Test phase
-
 
 
 ### Task II: Brain Tumor Segmentation with Missing Modalities
