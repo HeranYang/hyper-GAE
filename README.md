@@ -64,6 +64,7 @@ The structure of our data folder is:
         |       |-- SliceData\      : processed 3D data in .npy format
         |       |       |-- 3DTrain\       : training data set
         |       |       |       |-- TrainA\       : t1w   images
+        |       |       |       |       |-- BraTS19-id{:0>3d}.npy       : image name format
         |       |       |       |-- TrainB\       : t1ce  images
         |       |       |       |-- TrainC\       : t2w   images
         |       |       |       |-- TrainD\       : flair images
@@ -71,12 +72,14 @@ The structure of our data folder is:
         |       |-- VolumeData\     : processed 3D data in .nii.gz format
         |       |       |-- Valid\         : validation data set
         |       |       |       |-- ValidA\       : t1w   images
+        |       |       |       |       |-- BraTS19-id{:0>3d}.nii.gz    : image name format
         |       |       |       |-- ValidB\       : t1ce  images
         |       |       |       |-- ValidC\       : t2w   images
         |       |       |       |-- ValidD\       : flair images
         |       |       |       |-- ValidL\       : segmentation labels
         |       |       |-- Test\          : test data set
         |       |       |       |-- TestA\        : t1w   images
+        |       |       |       |       |-- BraTS19-id{:0>3d}.nii.gz    : image name format
         |       |       |       |-- TestB\        : t1ce  images
         |       |       |       |-- TestC\        : t2w   images
         |       |       |       |-- TestD\        : flair images
