@@ -47,13 +47,17 @@ The data has been pre-processed by organizers, i.e., co-registered to the same a
 Additionally, we conduct several extra pre-processing steps:
 * N4 correction
 * White matter peak normalization of each modality to 1000
-* Cutting out the black background area outside the brain
+* Cutting out the black background area outside the brain (for both images and labels)
 
 After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalities are 4000, 6000, 10000 and 7000 (arbitrary units) respectively.
-For the training subset, the intensities are further linearly scaled to [0, 1], and then the processed 3d training images are saved in .npy format to reduce the time of loading data. 
-The processed validation and test data is saved in .nii.gz format, and the linear scaling for validation and test subjects is included in our codes within utils.py.
 
-Segmentation label
+For the training subset: 
+* The image intensities are further linearly scaled to [0, 1], and then the processed 3d training images are saved in .npy format to reduce the time of loading data.
+* The segmentation labels are
+
+For the validation and test subset: 
+* The processed 3d validation and test images are saved in .nii.gz format, and the linear scaling for validation and test subjects is included in our codes within utils.py.
+* The segmentation labels are
 
 
 ### Data Folder Structure
