@@ -51,7 +51,8 @@ Additionally, we conduct several extra pre-processing steps:
 
 After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalities are 4000, 6000, 10000 and 7000 (arbitrary units) respectively.
 Then, the training and validation/test subjects are respectively processed as follows:
-* For the training subset: The image intensities are further linearly scaled to [0, 1], and then the processed 3d training images are saved in .npy format to reduce the time of loading data. The original segmentation labels are 
+* For the training subset: The image intensities are further linearly scaled to [0, 1], and then the processed 3d training images are saved in .npy format to reduce the time of loading data. For an image volume with MxNxD voxels, the original segmentation label also contains MxNxD voxels, with label 4 for the enhancing tumor
+(ET), label 2 for peritumoral edema (ED), label 1 for necrotic and non-enhancing tumor core (NCR/NET), and label 0 for background. We reorganize the segmentation label into a MxNxDx3 volume, where each MxNxD sub-volume respectively corresponds to the whole tumor (WT), tumor core (TC) and enhancing tumor (ET), with 1 for foreground and 0 for background.
 * For the validation/test subset: The processed 3d validation and test images are saved in .nii.gz format, and the linear scaling for validation and test subjects is included in our codes within utils.py. The segmentation labels are
 
 
@@ -123,7 +124,7 @@ Test phase
 
 
 ## Citation
-If you use this code for your research, please cite our paper:
+If you find this code useful for your research, please cite our paper:
 > @article{yang2022learning, 
 > <br> title={Learning Unified Hyper-network for Multi-modal MR Image Synthesis and Tumor Segmentation with Missing Modalities}, 
 > <br> author={Yang, Heran and Sun, Jian and Xu, Zongben},
