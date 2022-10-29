@@ -125,10 +125,10 @@ Test phase
 ## Citation
 If you use this code for your research, please cite our paper:
 > @article{yang2022learning, 
-> <br> title={Learning Unified Hyper-network for Multi-modal MR Image Synthesis and Tumor Segmentation with Missing Modalities}, 
-> <br> author={Yang, Heran and Sun, Jian and Xu, Zongben},
-> <br> journal={Submitted to IEEE Transactions on Medical Imaging},
-> <br> year={2022}}
+> <br>     title={Learning Unified Hyper-network for Multi-modal MR Image Synthesis and Tumor Segmentation with Missing Modalities}, 
+> <br>     author={Yang, Heran and Sun, Jian and Xu, Zongben},
+> <br>     journal={Submitted to IEEE Transactions on Medical Imaging},
+> <br>     year={2022}}
 
 
 
