@@ -14,8 +14,7 @@ The outline of this readme file is:
     Overview
     Requirements
     Dataset
-    Task I: Multi-modal MR Image Synthesis
-    Task II: Brain Tumor Segmentation with Missing Modalities
+    Usage
     Citation
     Reference
     
@@ -50,8 +49,8 @@ Additionally, we conduct several extra pre-processing steps:
 * Cutting out the black background area outside the brain
 
 After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalities are 4000, 6000, 10000 and 7000 (arbitrary units) respectively.
-
-To reduce the time of loading data, we save the processed training data in .npy format, and save the processed validation and test data in .nii.gz format.
+For the training subset, the intensities are further linearly scaled to [0, 1], and then the processed 3d training images are saved in .npy format to reduce the time of loading data. 
+The processed validation and test data is saved in .nii.gz format, and the linear scaling for validation and test subjects is included in our codes within utils.py.
 
 Segmentation label
 
@@ -83,8 +82,9 @@ The structure of our data folder is:
 
 
 
+## Usage
 
-## Task I: Multi-modal MR Image Synthesis
+### Task I: Multi-modal MR Image Synthesis
 
 Training phase
 
@@ -94,7 +94,7 @@ Test phase
 
 
 
-## Task II: Brain Tumor Segmentation with Missing Modalities
+### Task II: Brain Tumor Segmentation with Missing Modalities
 
 Training phase
 
