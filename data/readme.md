@@ -16,6 +16,7 @@ Additionally, we conduct several extra pre-processing steps:
 * Cutting out the black background area outside the brain (for both images and labels)
 
 After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalities are 4000, 6000, 10000 and 7000 (arbitrary units) respectively.
+
 Then, the training and validation/test subjects are respectively processed as follows:
 
 * For the *training* subset
