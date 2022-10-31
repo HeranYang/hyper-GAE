@@ -90,8 +90,7 @@ The structure of our data folder is:
 
 ## Usage
 
-We provide both the codes of our method for multi-modal MR image synthesis and tumor segmentation, and their usages are similar.
-
+We provide the codes of our Hyper-GAE respectively for multi-modal MR image synthesis and tumor segmentation with missing modalities.
 The structure of our code folder is:
 
     synthesis\         : code of Hyper-GAE for multi-modal MR image synthesis
