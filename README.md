@@ -90,6 +90,7 @@ The structure of our data folder is:
 
 ## Usage
 
+We provide both the codes for multi-modal MR image synthesis and tumor segmentation, and their usages are the same.
 The structure of our code folder is:
 
     synthesis\         : code of Hyper-GAE for multi-modal MR image synthesis
@@ -106,22 +107,34 @@ The structure of our code folder is:
            |-- utils.py        : code of loading train and test data
 
 
-### Task I: Multi-modal MR Image Synthesis
+### Training
 
-Training phase
+Our code can be trained using the following commond:
 
-Valid phase
+    python main.py --batchsize=2 --phase=train
 
-Test phase
+If you want to continue train the model, you could uncomment the continue_training codes and comment the warmup strategy codes in train function within model.py, and then run the commond above.
 
 
-### Task II: Brain Tumor Segmentation with Missing Modalities
+### Validation
 
-Training phase
+Before starting the validation process, you may need to modify the information about valid set and epoch in valid function within model.py.
+Then, the validation process can be conducted using the following commond:
 
-Valid phase
+    python main.py --batchsize=1 --phase=valid
+    
+After generating the validation results, you could select the optimal epoch_id based on the performance on validation set.
 
-Test phase
+
+### Test
+
+Before starting the test process, you need to set the epoch as the selected optimal epoch_id in test function within model.py.
+Then, you can generate the test results using the following commond:
+
+    python main.py --batchsize=1 --phase=test
+
+Note that our codes defaultly utilize the 8-direction flips during inference, and you could comment the codes of flips 2-8 if you do not want to use this strategy.
+
 
 
 
