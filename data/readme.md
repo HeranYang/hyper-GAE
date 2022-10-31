@@ -18,7 +18,6 @@ Additionally, we conduct several extra pre-processing steps:
 After preprocessing, the maximal intensities of T1w, T1ce, T2w and Flair modalities are 4000, 6000, 10000 and 7000 (arbitrary units) respectively.
 
 Then, the training and validation/test subjects are respectively processed as follows:
-
 * For the *training* subset
     * *Image*: The image intensities are further linearly scaled to [0, 1], and then the processed 3d training images are saved in .npy format to reduce the time of loading data. 
     * *Label*: For a MxNxD image volume, the original segmentation label also contains MxNxD voxels, with label 4 for the enhancing tumor
