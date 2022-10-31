@@ -60,8 +60,8 @@ Then, the training and validation/test subjects are respectively processed as fo
 The structure of our data folder is:
 
     data\    : root data folder  
-        |-- BraTS-Dataset-pro\      : processed data folder
-        |       |-- SliceData\      : processed 3D data in .npy format
+        |-- BraTS-Dataset-pro\      : processed data folder for BraTS 2019 dataset
+        |       |-- SliceData\         : processed 3D data in .npy format
         |       |       |-- 3DTrain\       : training data set
         |       |       |       |-- TrainA\       : t1w   images
         |       |       |       |       |-- BraTS19-id{:0>3d}.npy       : image name format
@@ -69,7 +69,7 @@ The structure of our data folder is:
         |       |       |       |-- TrainC\       : t2w   images
         |       |       |       |-- TrainD\       : flair images
         |       |       |       |-- TrainL\       : segmentation labels
-        |       |-- VolumeData\     : processed 3D data in .nii.gz format
+        |       |-- VolumeData\        : processed 3D data in .nii.gz format
         |       |       |-- Valid\         : validation data set
         |       |       |       |-- ValidA\       : t1w   images
         |       |       |       |       |-- BraTS19-id{:0>3d}.nii.gz    : image name format
@@ -84,6 +84,79 @@ The structure of our data folder is:
         |       |       |       |-- TestC\        : t2w   images
         |       |       |       |-- TestD\        : flair images
         |       |       |       |-- TestL\        : segmentation labels
+        |-- BraTS-2018\             : processed data folder for BraTS 2018 dataset
+        |       |-- Fold1\             : fold-1 data of three-fold cross-validation
+        |       |       |-- npyData\       : processed 3D data in .npy format
+        |       |       |       |-- Train\        : training data set
+        |       |       |       |       |-- TrainA\       : t1w   images
+        |       |       |       |       |       |-- BraTS18-id{:0>3d}.npy       : image name format
+        |       |       |       |       |-- TrainB\       : t1ce  images
+        |       |       |       |       |-- TrainC\       : t2w   images
+        |       |       |       |       |-- TrainD\       : flair images
+        |       |       |       |       |-- TrainL\       : segmentation labels
+        |       |       |-- niiData\       : processed 3D data in .nii.gz format
+        |       |       |       |-- Valid\         : validation data set
+        |       |       |       |       |-- ValidA\       : t1w   images
+        |       |       |       |       |       |-- BraTS18-id{:0>3d}.nii.gz    : image name format
+        |       |       |       |       |-- ValidB\       : t1ce  images
+        |       |       |       |       |-- ValidC\       : t2w   images
+        |       |       |       |       |-- ValidD\       : flair images
+        |       |       |       |       |-- ValidL\       : segmentation labels
+        |       |       |       |-- Test\          : test data set
+        |       |       |       |       |-- TestA\        : t1w   images
+        |       |       |       |       |       |-- BraTS18-id{:0>3d}.nii.gz    : image name format
+        |       |       |       |       |-- TestB\        : t1ce  images
+        |       |       |       |       |-- TestC\        : t2w   images
+        |       |       |       |       |-- TestD\        : flair images
+        |       |       |       |       |-- TestL\        : segmentation labels
+        |       |-- Fold2\             : fold-2 data of three-fold cross-validation
+        |       |       |-- npyData\       : processed 3D data in .npy format
+        |       |       |       |-- Train\        : training data set
+        |       |       |       |       |-- TrainA\       : t1w   images
+        |       |       |       |       |       |-- BraTS18-id{:0>3d}.npy       : image name format
+        |       |       |       |       |-- TrainB\       : t1ce  images
+        |       |       |       |       |-- TrainC\       : t2w   images
+        |       |       |       |       |-- TrainD\       : flair images
+        |       |       |       |       |-- TrainL\       : segmentation labels
+        |       |       |-- niiData\       : processed 3D data in .nii.gz format
+        |       |       |       |-- Valid\         : validation data set
+        |       |       |       |       |-- ValidA\       : t1w   images
+        |       |       |       |       |       |-- BraTS18-id{:0>3d}.nii.gz    : image name format
+        |       |       |       |       |-- ValidB\       : t1ce  images
+        |       |       |       |       |-- ValidC\       : t2w   images
+        |       |       |       |       |-- ValidD\       : flair images
+        |       |       |       |       |-- ValidL\       : segmentation labels
+        |       |       |       |-- Test\          : test data set
+        |       |       |       |       |-- TestA\        : t1w   images
+        |       |       |       |       |       |-- BraTS18-id{:0>3d}.nii.gz    : image name format
+        |       |       |       |       |-- TestB\        : t1ce  images
+        |       |       |       |       |-- TestC\        : t2w   images
+        |       |       |       |       |-- TestD\        : flair images
+        |       |       |       |       |-- TestL\        : segmentation labels
+        |       |-- Fold3\             : fold-3 data of three-fold cross-validation
+        |       |       |-- npyData\       : processed 3D data in .npy format
+        |       |       |       |-- Train\        : training data set
+        |       |       |       |       |-- TrainA\       : t1w   images
+        |       |       |       |       |       |-- BraTS18-id{:0>3d}.npy       : image name format
+        |       |       |       |       |-- TrainB\       : t1ce  images
+        |       |       |       |       |-- TrainC\       : t2w   images
+        |       |       |       |       |-- TrainD\       : flair images
+        |       |       |       |       |-- TrainL\       : segmentation labels
+        |       |       |-- niiData\       : processed 3D data in .nii.gz format
+        |       |       |       |-- Valid\         : validation data set
+        |       |       |       |       |-- ValidA\       : t1w   images
+        |       |       |       |       |       |-- BraTS18-id{:0>3d}.nii.gz    : image name format
+        |       |       |       |       |-- ValidB\       : t1ce  images
+        |       |       |       |       |-- ValidC\       : t2w   images
+        |       |       |       |       |-- ValidD\       : flair images
+        |       |       |       |       |-- ValidL\       : segmentation labels
+        |       |       |       |-- Test\          : test data set
+        |       |       |       |       |-- TestA\        : t1w   images
+        |       |       |       |       |       |-- BraTS18-id{:0>3d}.nii.gz    : image name format
+        |       |       |       |       |-- TestB\        : t1ce  images
+        |       |       |       |       |-- TestC\        : t2w   images
+        |       |       |       |       |-- TestD\        : flair images
+        |       |       |       |       |-- TestL\        : segmentation labels
 
 
 
