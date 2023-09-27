@@ -36,16 +36,19 @@ Then, you can generate the test results using the following commond:
 
     python main.py --batchsize=1 --phase=test
 
-Note that our codes defaultly utilize the 8-direction flips during inference, and you could comment the codes of flips 2-8 if you do not want to use this strategy.
+The generated test results would be 3D volumes in .nii.gz format.
 
 
+### About Trained Model
+We have also uploaded our trained Hyper-GAE model for multi-modal MR image synthesis on BraTS 2019 dataset, and one can directly use them for multi-modal MR image synthesis. Due to the size restriction of upload files in github, the trained model is uploaded to the [Google Drive](https://drive.google.com/drive/folders/1vtDaH02IdrvO1sESW8nTMjMdI4ewbKTo?usp=sharing).
 
 
 
 ## Citation
 If you find this code useful for your research, please cite our paper:
-> @article{yang2022learning, 
+> @article{yang2023learning, 
 > <br> title={Learning Unified Hyper-network for Multi-modal MR Image Synthesis and Tumor Segmentation with Missing Modalities}, 
 > <br> author={Yang, Heran and Sun, Jian and Xu, Zongben},
-> <br> journal={Submitted to IEEE Transactions on Medical Imaging},
-> <br> year={2022}}
+> <br> journal={IEEE Transactions on Medical Imaging},
+> <br> doi={10.1109/TMI.2023.3301934},
+> <br> year={2023}}
