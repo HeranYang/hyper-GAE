@@ -44,8 +44,9 @@ Note that our codes defaultly utilize the 8-direction flips during inference, an
 
 ## Citation
 If you find this code useful for your research, please cite our paper:
-> @article{yang2022learning, 
+> @article{yang2023learning, 
 > <br> title={Learning Unified Hyper-network for Multi-modal MR Image Synthesis and Tumor Segmentation with Missing Modalities}, 
 > <br> author={Yang, Heran and Sun, Jian and Xu, Zongben},
-> <br> journal={Submitted to IEEE Transactions on Medical Imaging},
-> <br> year={2022}}
+> <br> journal={IEEE Transactions on Medical Imaging},
+> <br> doi={10.1109/TMI.2023.3301934},
+> <br> year={2023}}
