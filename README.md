@@ -6,6 +6,15 @@ This repository is the official Tensorflow implementation of the paper "Learning
 
 ## Overview
 
+<div align=center>
+<img src="https://github.com/HeranYang/hyper-GAE/blob/main/images/Framework.png" width="800px"/>
+</div>
+
+
+Accurate segmentation of brain tumors is of critical importance in clinical assessment and treatment planning, which requires multiple MR modalities providing complementary information. However, due to practical limits, one or more modalities may be missing in real scenarios. To tackle this problem, existing methods need to train multiple networks or a unified but fixed network for various possible missing modality cases, which leads to high computational burdens or sub-optimal performance. In this paper, we propose a unified and adaptive multimodal MR image synthesis method, and further apply it to tumor segmentation with missing modalities. Based on the decomposition of multi-modal MR images into common and modality-specific features, we design a shared hyper-encoder for embedding each available modality into the feature space, a graph-attention-based fusion block to aggregate the features of available modalities to the fused features, and a shared hyper-decoder for image reconstruction. We also propose an adversarial common feature constraint to enforce the fused features to be in a common space. As for missing modality segmentation, we first conduct the feature-level and image-level completion using our synthesis method and then segment the tumors based on the completed MR images together with the extracted
+common features. Moreover, we design a hypernetbased modulation module to adaptively utilize the real and synthetic modalities. Experimental results suggest that our method can not only synthesize reasonable multi-modal MR images, but also achieve state-of-the-art performance on brain tumor segmentation with missing modalities.
+
+
 The outline of this readme file is:
 
     Overview
