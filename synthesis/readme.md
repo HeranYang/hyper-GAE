@@ -40,7 +40,7 @@ The generated test results would be 3D volumes in .nii.gz format.
 
 
 ### About Trained Model
-We have also uploaded our trained Hyper-GAE model for multi-modal MR image synthesis on BraTS 2019 dataset, and one can directly use them for multi-modal MR image synthesis. Due to the size restriction of upload files in github, the trained model is uploaded to the [Google Drive](https://drive.google.com/drive/folders/1vtDaH02IdrvO1sESW8nTMjMdI4ewbKTo?usp=sharing).
+We have also uploaded our trained Hyper-GAE model for multi-modal MR image synthesis on BraTS 2019 dataset, and one can directly use them for multi-modal MR image synthesis. Due to the restriction of github, the trained model is uploaded to the [Google Drive](https://drive.google.com/drive/folders/1vtDaH02IdrvO1sESW8nTMjMdI4ewbKTo?usp=sharing).
 
 
 
