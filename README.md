@@ -221,6 +221,8 @@ Then, you can generate the test results using the following commond:
 Note that our codes defaultly utilize the 8-direction flips during inference, and you could comment the codes of flips 2-8 if you do not want to use this strategy.
 
 
+### About Trained Model
+We have also uploaded our trained Hyper-GAE models for multi-modal MR image synthesis and tumor segmentation with missing modalities on BraTS 2019 dataset, and one can directly use them for missing-modality MR image synthesis and segmentation. Due to the restriction of github, the trained models are uploaded to the [Google Drive](https://drive.google.com/drive/folders/1L0WFTrmLwCDLOv0l5Ml2pjyFcGoe-PKg?usp=sharing).
 
 
 
