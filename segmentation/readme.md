@@ -39,6 +39,9 @@ Then, you can generate the test results using the following commond:
 Note that our codes defaultly utilize the 8-direction flips during inference, and you could comment the codes of flips 2-8 if you do not want to use this strategy.
 
 
+### About Trained Model
+We have also uploaded our trained Hyper-GAE model for tumor segmentation with missing modalities on BraTS 2019 dataset, and one can directly use them for missing-modality tumor segmentation. Due to the restriction of github, the trained model is uploaded to the [Google Drive](https://drive.google.com/drive/folders/1LgHoGIO1h8VFuOOSe18J_38HbXeuAbVB?usp=sharing).
+
 
 
 
